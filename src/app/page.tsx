@@ -611,7 +611,7 @@ function CTASection() {
                     <p className="text-gray-400 text-sm mb-2">Ou entre em contato direto:</p>
                     <div className="flex justify-center space-x-4">
                       <a 
-                        href="https://wa.me/5511999999999" 
+                        href="https://wa.me/5562991556834" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm"
@@ -619,13 +619,13 @@ function CTASection() {
                         WhatsApp
                       </a>
                       <a 
-                        href="tel:+5511999999999" 
+                        href="tel:+5562991556834" 
                         className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm"
                       >
                         Telefone
                       </a>
                       <a 
-                        href="mailto:contato@portto.com.br" 
+                        href="mailto:porttodesenvolvimento@gmail.com.br" 
                         className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm"
                       >
                         E-mail
