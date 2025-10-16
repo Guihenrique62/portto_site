@@ -99,9 +99,11 @@ function HeroSection() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-5xl md:text-7xl font-bold mb-6"
         >
-          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span
+            className="bg-gradient-to-r from-cyan-400 to-blue-700 bg-clip-text text-transparent"
+            >
             PORTTO
-          </span>
+            </span>
         </motion.h1>
 
         <motion.p

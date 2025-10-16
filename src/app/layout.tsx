@@ -1,13 +1,15 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 import type { Metadata } from 'next'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const inter = Inter({ 
   subsets: ['latin'],
   display: 'swap',
-  preload: true
+  variable: '--font-inter',
 })
+
 
 export const metadata: Metadata = {
   title: {
@@ -135,10 +137,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} font-sans`}>
         <Navbar />
         <main>{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )
