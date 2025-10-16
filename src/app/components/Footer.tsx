@@ -55,42 +55,25 @@ export default function Footer() {
     { name: 'Quem Somos', href: '/quem-somos' },
     { name: 'Nossas Soluções', href: '/nossas-solucoes' },
     { name: 'Depoimentos', href: '/depoimentos' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Cases', href: '/cases' },
   ]
 
   const support = [
     { name: 'Contato', href: '/contato' },
     { name: 'Orçamento', href: '/contato#orcamento' },
-    { name: 'Suporte', href: '/suporte' },
-    { name: 'Política de Privacidade', href: '/politica-privacidade' },
-    { name: 'Termos de Uso', href: '/termos-uso' },
   ]
 
   const socialLinks = [
     { 
       icon: Instagram, 
-      href: 'https://instagram.com/portto', 
+      href: 'https://instagram.com/porttodev', 
       name: 'Instagram',
       color: 'hover:text-pink-500'
     },
     { 
-      icon: Facebook, 
-      href: 'https://facebook.com/portto', 
-      name: 'Facebook',
-      color: 'hover:text-blue-600'
-    },
-    { 
       icon: Linkedin, 
-      href: 'https://linkedin.com/company/portto', 
+      href: 'https://linkedin.com/company/porttodev', 
       name: 'LinkedIn',
       color: 'hover:text-blue-400'
-    },
-    { 
-      icon: Youtube, 
-      href: 'https://youtube.com/portto', 
-      name: 'YouTube',
-      color: 'hover:text-red-500'
     },
   ]
 
@@ -238,21 +221,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="lg:col-span-2 md:col-span-2"
           >
-            <div className="bg-gradient-to-r from-cyan-500/10 to-blue-600/10 border border-cyan-500/20 rounded-xl p-6">
-              <div className="flex items-center mb-4">
-                <MessageCircle className="w-6 h-6 text-cyan-400 mr-3" />
-                <h3 className="text-lg font-semibold text-white">Pronto para transformar seu negócio?</h3>
-              </div>
-              <p className="text-gray-300 text-sm mb-4">
-                Vamos conversar sobre como podemos ajudar sua empresa a crescer com tecnologia.
-              </p>
-              <Link 
-                href="/contato"
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center w-full text-center"
-              >
-                Solicitar Orçamento
-              </Link>
-            </div>
+           
 
             {/* Social Links */}
             <div className="mt-6">

@@ -4,8 +4,9 @@ import { motion } from 'framer-motion'
 import { 
   Globe, MessageCircle, Rocket, BarChart3, 
   Workflow, Shield, Star, Users, CheckCircle,
-  ArrowRight, Play
+  ArrowRight, Play,
 } from 'lucide-react'
+import Link from 'next/link'
 
 // Adicione isso no início do arquivo para Structured Data da página
 const pageStructuredData = {
@@ -55,6 +56,10 @@ export default function Home() {
           {/* Section 5 - Atendimento Exclusivo */}
           <section aria-labelledby="exclusive-heading">
             <ExclusiveSection />
+          </section>
+
+          <section aria-labelledby='cta-heading'>
+            <CTASection />
           </section>
         </main>
       </div>
@@ -483,6 +488,179 @@ function ExclusiveSection() {
             </div>
           </motion.div>
         </motion.div>
+      </div>
+    </section>
+  )
+}
+
+
+function CTASection() {
+  return (
+    <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-10 left-10 w-20 h-20 bg-cyan-400 rounded-full blur-xl"></div>
+        <div className="absolute bottom-10 right-10 w-32 h-32 bg-blue-500 rounded-full blur-xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-purple-500 rounded-full blur-2xl"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-white"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="flex items-center mb-4"
+            >
+              <Rocket className="w-8 h-8 text-cyan-400 mr-3" />
+              <span className="text-cyan-400 font-semibold text-lg">Vamos Começar?</span>
+            </motion.div>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+            >
+              Pronto para{' '}
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                transformar
+              </span>{' '}
+              seu negócio?
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-xl text-gray-300 mb-8 leading-relaxed"
+            >
+              Não espere para modernizar sua empresa. Nossa equipe está pronta para 
+              criar a solução perfeita para suas necessidades.
+            </motion.p>
+
+            {/* Features List */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="space-y-4 mb-8"
+            >
+              {[
+                'Consultoria especializada gratuita',
+                'Proposta personalizada em 24h',
+                'Desenvolvimento com tecnologias modernas',
+                'Suporte contínuo e evolução'
+              ].map((feature, index) => (
+                <div key={feature} className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full flex-shrink-0"></div>
+                  <span className="text-gray-300">{feature}</span>
+                </div>
+              ))}
+            </motion.div>
+          </motion.div>
+
+          {/* CTA Card */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <div className="bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border border-cyan-500/20 rounded-2xl p-8 w-full max-w-md backdrop-blur-sm">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="flex items-center justify-center mb-6">
+                  <MessageCircle className="w-8 h-8 text-cyan-400 mr-3" />
+                  <h3 className="text-2xl font-semibold text-white">Vamos Conversar?</h3>
+                </div>
+                
+                <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+                  Conte-nos sobre seu projeto e vamos juntos encontrar a melhor solução 
+                  para impulsionar seu negócio.
+                </p>
+
+                <div className="space-y-4">
+                  <Link 
+                    href="/contato"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center w-full text-center group"
+                  >
+                    <span>Solicitar Orçamento</span>
+                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                  </Link>
+                  
+                  <div className="text-center">
+                    <p className="text-gray-400 text-sm mb-2">Ou entre em contato direto:</p>
+                    <div className="flex justify-center space-x-4">
+                      <a 
+                        href="https://wa.me/5511999999999" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm"
+                      >
+                        WhatsApp
+                      </a>
+                      <a 
+                        href="tel:+5511999999999" 
+                        className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm"
+                      >
+                        Telefone
+                      </a>
+                      <a 
+                        href="mailto:contato@portto.com.br" 
+                        className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm"
+                      >
+                        E-mail
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Trust Badges */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="mt-6 pt-6 border-t border-cyan-500/20"
+                >
+                  <div className="flex justify-center space-x-6 text-gray-400 text-sm">
+                    <div className="text-center">
+                      <div className="font-semibold text-cyan-400">50+</div>
+                      <div>Projetos Entregues</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="font-semibold text-cyan-400">100%</div>
+                      <div>Clientes Satisfeitos</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="font-semibold text-cyan-400">24h</div>
+                      <div>Resposta Rápida</div>
+                    </div>
+                  </div>
+                </motion.div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
