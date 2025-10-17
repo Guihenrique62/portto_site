@@ -113,7 +113,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone size={18} className="text-cyan-400 flex-shrink-0" />
-                <span>(62) 99155-6834</span>
+                <span>(62) 98528-0386</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Mail size={18} className="text-cyan-400 flex-shrink-0" />
@@ -277,7 +277,7 @@ export default function Footer() {
 
       {/* WhatsApp Floating Button */}
       <motion.a
-        href="https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre as soluções PORTTO"
+        href="https://wa.me/5562985280386?text=Olá! Gostaria de mais informações sobre as soluções PORTTO"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0 }}

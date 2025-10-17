@@ -124,7 +124,7 @@ export default function RootLayout({
               },
               'contactPoint': {
                 '@type': 'ContactPoint',
-                'telephone': '+55-11-99999-9999',
+                'telephone': '+55-62-98528-0386',
                 'contactType': 'customer service',
                 'areaServed': 'BR',
                 'availableLanguage': 'pt-BR'
