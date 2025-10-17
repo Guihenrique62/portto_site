@@ -483,7 +483,7 @@ export default function NossasSolucoes() {
                 Falar com Especialista
               </Link>
               <a 
-                href="https://wa.me/5562991556834"
+                href="https://wa.me/5562985280386"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 inline-flex items-center justify-center"
