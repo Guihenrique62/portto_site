@@ -142,7 +142,7 @@ Enviado via Formulário do Site PORTTO
     `.trim()
 
       // Abrir WhatsApp com a mensagem formatada
-      const whatsappUrl = `https://wa.me/5562991556834?text=${encodeURIComponent(whatsappMessage)}`
+      const whatsappUrl = `https://wa.me/5562985280386?text=${encodeURIComponent(whatsappMessage)}`
       window.open(whatsappUrl, '_blank')
 
       // Enviar email
@@ -336,7 +336,7 @@ Enviado via Formulário do Site PORTTO
                         value={formData.telefone}
                         onChange={handleChange}
                         className="w-full p-3 md:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 text-sm md:text-base text-gray-600 placeholder-gray-500 bg-white"
-                        placeholder="(62) 99155-6834"
+                        placeholder="(62) 98528-0386"
                       />
                     </div>
                   </motion.div>
@@ -443,8 +443,8 @@ Enviado via Formulário do Site PORTTO
                       iconBg: 'bg-cyan-100',
                       iconColor: 'text-cyan-600',
                       title: 'Telefone',
-                      content: '(62) 99155-6834',
-                      link: 'https://wa.me/5562991556834',
+                      content: '(62) 98528-0386',
+                      link: 'https://wa.me/5562985280386',
                       linkText: 'Falar no WhatsApp',
                       linkIcon: MessageCircle,
                       linkColor: 'text-cyan-600 hover:text-cyan-700'
@@ -546,7 +546,7 @@ Enviado via Formulário do Site PORTTO
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <a
-                href="https://wa.me/5562991556834"
+                href="https://wa.me/5562985280386"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 md:py-3 md:px-8 rounded-lg transition-colors duration-200 inline-flex items-center justify-center text-sm md:text-base"
