@@ -60,7 +60,7 @@ export default function Navbar() {
               <Link href="/" className="block text-gray-700 hover:text-cyan-600 transition-colors font-medium">Início</Link>
               <Link href="/quem-somos" className="block text-gray-700 hover:text-cyan-600 transition-colors font-medium">Quem Somos</Link>
               <Link href="/nossas-solucoes" className="block text-gray-700 hover:text-cyan-600 transition-colors font-medium">Soluções</Link>
-              <Link href="/depoimentos" className="block text-gray-700 hover:text-cyan-600 transition-colors font-medium">Depoimentos</Link>
+              {/* <Link href="/depoimentos" className="block text-gray-700 hover:text-cyan-600 transition-colors font-medium">Depoimentos</Link> */}
               <Link href="/contato" className="block bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg text-center font-medium">Contato</Link>
             </motion.div>
           )}
