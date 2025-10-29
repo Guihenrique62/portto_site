@@ -27,9 +27,9 @@ export default function Navbar() {
             <Link href="/nossas-solucoes" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
               Soluções
             </Link>
-            <Link href="/depoimentos" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+            {/* <Link href="/depoimentos" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
               Depoimentos
-            </Link>
+            </Link> */}
             <Link href="/contato" className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 font-medium">
               Contato
             </Link>
